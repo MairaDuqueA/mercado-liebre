@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views/index.html">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/views/register.html" method="post">
+        <label for="name">Nombre y apellido:</label>
+        <input type="text" name="name" id="name" placeholder="Nombre y apellido">
+        <br>
+        <label for="user">Nombre de usuario:</label>
+        <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+        <br>
+        <label for="date">Fecha de nacimiento:</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="adress">Domicilio</label>
+        <input type="text" name="adress" id="adress" placeholder="Dirección">
+        <br>
+        <label for="profile">Perfil de usuario</label>
+        <select name="profile" id="profile">
+            <option value="buy">Comprador</option>
+            <option value="sell">Vendedor</option>
+        </select>
+        <br>
+        <label for="interests">Categorías de interés</label>
+        <input type="checkbox" name="interests" value="Electro">Electro
+        <input type="checkbox" name="interests" value="Moda">Moda
+        <input type="checkbox" name="interests" value="Hogar">Hogar
+        <input type="checkbox" name="interests" value="Juguetería">Juguetería
+        <input type="checkbox" name="interests" value="Vida sana">Vida sana
+        <br>
+        <label for="user-photo">Foto de usuario</label>
+        <input type="file" name="user-photo" accept=".jpg, .png">
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="check-password">Contraseña</label>
+        <input type="password" name="check-password" id="check-password">
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>

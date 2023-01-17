@@ -1,0 +1,283 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+font-family: 'Roboto', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+ul{
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+header{
+    background-color: #EAC926;
+    /*width: 100%;*/
+    padding: 5%;
+}
+
+main{
+    background-color: #ebebeb;
+    width: 90vw;
+    margin: 0px auto;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: solid grey 1px;
+    border-radius: 5px;
+    background-color: white;
+    width: 205px;
+}
+
+.input {
+    border: none;
+    width: 170px;
+    border-right: grey 1px solid;
+    padding-left: 5px;
+}
+
+.submit {
+    padding-left: 5px;
+}
+
+.navigation {
+    display: none;
+}
+
+.general-info, .user-info {
+    gap: 10px;
+}
+
+.last-visit, .offers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    text-align: center;
+    margin-bottom: 10px; /*Cada artículo con una separación de 10 px*/
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding-top: 5px;
+    background-color: white;
+}
+
+.titulares {
+    padding: 10px 0px;
+    color: #666;
+    font-size: 6px;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.price-box{
+    display: flex;
+    /*align-items: stretch;*/
+}
+
+.logo-header{
+    display: flex;
+    width: 200px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+/* header .form {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    height: 30px;
+
+} */
+
+.first-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+} */
+
+.title-header{
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 10px 0px;
+}
+
+.burger-menu{
+    border: 1px solid #1259c3; 
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    margin: 0 auto;
+    background-color:#1259c3;
+    padding: auto;
+}
+
+.fa-bars{
+    text-align: center;
+    color: white;
+    margin-left: 7px;
+    line-height: 29px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.precios {
+    padding-right: 10%;
+}
+
+.descuentos{
+    font-size: 14px;
+    color: #39b54a;
+}
+
+.description{
+    display:none;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    text-align: left;
+    margin-left: 15px;
+}
+
+main section article .one {
+    border-top: 1px solid #ebebeb; /*borde superior de 1 píxel, línea sólida y color #ebebeb - c19*/
+    padding: 15px; /*Debe tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus lados - c19*/
+    position: relative; /*Este debe tener posición relativa para comlementar la posición absoluta de main section article i*/
+}
+
+main section article i {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute; /*Este debe tener posición relativa para complementar con main section article .one*/
+    right: 20px;
+    top: -28px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer > section > div > i{
+    color: #03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer > section{
+    margin: 5em;
+}
+
+.copyright{
+    text-align: left;
+    margin-left: 2em;
+}
+
+/*--------------TABLET------------*/
+@media (min-width:481px) {
+
+    .description{
+        display:block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100 , 100 , 100); /*Este box-shadow aplica para los dispositivos tablet o de resoluciones superiores*/
+        width: 40vw; /*Aquí condiciono a cada artículo a que en tablet ocupe un espacio diferente para que me aparezcan 2 en una misma columna*/
+    }
+
+    .last-visit, .offers {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .general-info, .user-info {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .burger-menu {
+        display: none;
+    }   
+}
+
+/*--------------DESKTOP------------*/
+@media (min-width:769px) {
+
+    .description{
+        display:block;
+    }
+    
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100 , 100 , 100); /*Este box-shadow aplica para los dispositivos tablet o de resoluciones superiores*/
+        width: 20vw;
+    }
+
+    .last-visit, .offers {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .general-info, .user-info {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .burger-menu {
+        display: none;
+    }   
+}
