@@ -36,7 +36,7 @@ header{
 
 main{
     background-color: #ebebeb;
-    margin: 0px 5vw;
+    padding: 30px 5vw;
 }
 
 .form {
@@ -71,6 +71,7 @@ main{
 .last-visit, .offers {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 10px;
 }
 
 article {
@@ -117,6 +118,10 @@ article {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+li a :link :visited {
+    text-decoration: none;
 }
 
 /* header .form .input {
